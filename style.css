@@ -36,7 +36,9 @@ button:hover {
 #header_bar ul li {
   display: inline-block;
   text-align: center;
-  padding: 2em 1.5em;
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 32.65%;
 }
 
 /* Body Styles */
@@ -104,6 +106,27 @@ footer ul li {
   margin: 0 15.77%;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:745px) {
+  #header_bar ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 2em 0;
+    width: 32%;
+  }
+}
 
+@media screen and (max-width:640px) {
+  #header_bar ul {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    max-width: 100%;
+    background-color: #282c34;
+  }
+
+  #header_bar ul li {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+  }
 }
