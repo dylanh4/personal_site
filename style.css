@@ -9,12 +9,34 @@
   clear: both;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 a:hover {
   cursor: pointer;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+/* Header Styles */
+
+#header_bar ul {
+  position: absolute;
+  max-width: 52%;
+  display: inline;
+  margin: 0 auto;
+  left: 24%;
+  right: 24%;
+}
+
+#header_bar ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 2em 1.5em;
 }
 
 /* Body Styles */
@@ -80,4 +102,8 @@ footer ul li {
   max-height: 20px;
   height: 100%;
   margin: 0 15.77%;
+}
+
+@media screen and (max-width:640px) {
+
 }
