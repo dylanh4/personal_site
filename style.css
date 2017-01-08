@@ -113,15 +113,24 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  padding: 5%;
-  max-width: 20px;
+  /* padding: 5%; */
+  max-width: 50px;
   width: 100%;
-  max-height: 20px;
+  max-height: 50px;
   height: 100%;
-  margin: 0 15.77%;
+  margin: 0 15%;
+}
+
+footer img {
+  max-width: 100%;
+  border-radius: 25px;
 }
 
 @media screen and (max-width:745px) {
+  header {
+    transition: 1s;
+  }
+
   #header_bar ul li {
     display: inline-block;
     text-align: center;
@@ -131,6 +140,11 @@ footer ul li {
 }
 
 @media screen and (max-width:640px) {
+  header {
+    height: 48px;
+    transition: 1s;
+  }
+
   .handle {
     display: block;
   }
@@ -146,6 +160,7 @@ footer ul li {
     position: absolute;
     left: 0px;
     top: -200px;
+    transition: 1s;
   }
 
   #header_bar ul.visible {
@@ -161,6 +176,7 @@ footer ul li {
     text-align: center;
     padding: 1em 0;
     width: 100%;
+    border-radius: 5px;
   }
 
   #header_bar ul li:hover {
