@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#handle').click(function(){
-    $('#header_bar').toggleClass('visible');
-  })
+  $('.handle').click(function(){
+    $('#header_ul').toggleClass('visible');
+  });
 });
