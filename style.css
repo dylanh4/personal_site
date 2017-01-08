@@ -139,20 +139,20 @@ footer ul li {
     max-height: 9em;
   }
 
-  #header_ul {
-    max-width: 100%;
+  #header_bar ul {
+    width: 100%;
     max-height: 100%;
     background-color: #282c34;
     position: absolute;
+    left: 0px;
     top: -200px;
   }
 
-  #header_ul.visible {
+  #header_bar ul.visible {
     max-width: 100%;
     max-height: 100%;
     background-color: #282c34;
-    position: absolute;
-    top: 0px;
+    top: 48px;
     transition: 1s;
   }
 
