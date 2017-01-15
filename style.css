@@ -63,11 +63,10 @@ header, footer {
   color: #fff;
 }
 
-#banner, #sub_banner {
+#banner, #sub_banner, #contact_me {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-
 }
 
 #banner {
@@ -85,7 +84,51 @@ header, footer {
 }
 
 #sub_banner {
-  height: 670px;
+  height: 300px;
+}
+
+#contact_me {
+  height: 350px;
+  position: relative;
+}
+
+#contact_form {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0 5%;
+  width: 80%;
+  left: 5%;
+  height: 300px;
+}
+
+#contact_form div {
+  margin: 2%;
+  height: 40px;
+  width: 96%;
+}
+
+#contact_form div:nth-child(3) {
+  height: 80px;
+}
+
+input {
+  width: 200px;
+  float: right;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  width: 50%;
+  margin: 0 25%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #282c34;
+  color: #fff;
+  font-size: 18px;
 }
 
 .active {
@@ -113,7 +156,6 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  /* padding: 5%; */
   max-width: 50px;
   width: 100%;
   max-height: 50px;
@@ -158,13 +200,12 @@ footer img {
     max-height: 100%;
     background-color: #282c34;
     position: absolute;
-    left: 0px;
     top: -200px;
     transition: 1s;
   }
 
   #header_bar ul.visible {
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
     background-color: #282c34;
     top: 48px;
