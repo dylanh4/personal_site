@@ -22,6 +22,11 @@ button:hover {
   cursor: pointer;
 }
 
+h2 {
+  color: #111;
+  text-align: center;
+}
+
 /* Header Styles */
 #header_bar {
   max-height: 9em;
@@ -70,65 +75,40 @@ header, footer {
 }
 
 #banner {
-  height: 460px;
+  height: 360px;
+  transition: .5s;
 }
 
 #banner h1 {
   text-align: center;
   font-size: 35px;
-  height: 80px;
-  padding: 180px 0;
-  max-width: 400px;
-  width: 100%;
+  height: 40px;
+  padding: 160px 0;
+  max-width: 100%;
   margin: 0 auto;
+  transition: .5s;
 }
 
 #sub_banner {
-  height: 300px;
+  height: 500px;
+  text-align: center;
+}
+
+#sub_banner ul {
+  margin: 30px 0;
+}
+
+#sub_banner img {
+  border-radius: 58px;
+  max-width: 50px;
+}
+#sub_banner li:nth-child(2) {
+    font-weight: bolder;
 }
 
 #contact_me {
   height: 350px;
   position: relative;
-}
-
-#contact_form {
-  position: absolute;
-  box-sizing: border-box;
-  margin: 0 5%;
-  width: 80%;
-  left: 5%;
-  height: 300px;
-}
-
-#contact_form div {
-  margin: 2%;
-  height: 40px;
-  width: 96%;
-}
-
-#contact_form div:nth-child(3) {
-  height: 80px;
-}
-
-input {
-  width: 200px;
-  float: right;
-}
-
-label {
-  display: inline-block;
-}
-
-button {
-  width: 50%;
-  margin: 0 25%;
-  height: 100%;
-  border-radius: 5px;
-  border: none;
-  background-color: #282c34;
-  color: #fff;
-  font-size: 18px;
 }
 
 .active {
@@ -195,6 +175,20 @@ footer img {
     max-height: 9em;
   }
 
+  #banner {
+    height: 160px;
+    transition: .5s;
+  }
+
+  #banner h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 60px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: .5s;
+}
+
   #header_bar ul {
     width: 100%;
     max-height: 100%;
@@ -224,4 +218,10 @@ footer img {
     background-color: #111;
     transition: .2s;
   }
+
+  #sub_banner {
+    height: 640px;
+    transition: .5s;
+  }
+
 }
