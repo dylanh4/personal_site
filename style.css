@@ -3,6 +3,7 @@
 * {
   outline: 1px dashed red;
   font-family: Arial, sans-serif;
+  font-size: 20px;
 }
 
 .clearfix {
@@ -77,31 +78,55 @@ header, footer {
 #banner {
   height: 360px;
   transition: .5s;
+  position: relative;
+}
+
+#banner img {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 
 #banner h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 36px;
   height: 40px;
   padding: 160px 0;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   transition: .5s;
+  position: absolute;
+  z-index: 2;
 }
 
 #sub_banner {
-  height: 500px;
+  padding-top: 30px;
+  height: 550px;
   text-align: center;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+}
+
+#sub_banner p {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+#sub_banner h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 #sub_banner ul {
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 #sub_banner img {
-  border-radius: 58px;
   max-width: 50px;
 }
+
 #sub_banner li:nth-child(2) {
     font-weight: bolder;
 }
@@ -148,10 +173,22 @@ footer img {
   border-radius: 25px;
 }
 
-@media screen and (max-width:745px) {
+@media screen and (max-width:790px) {
   header {
     transition: 1s;
+    z-index: 4;
+    position: relative;
   }
+
+  #banner img {
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #sub_banner {
+    height: 570px;
+}
 
   #header_bar ul li {
     display: inline-block;
@@ -159,69 +196,94 @@ footer img {
     padding: 2em 0;
     width: 32%;
   }
+
+header {
+  height: 48px;
+  transition: 1s;
+}
+
+.handle {
+  display: block;
+}
+
+.active {
+  max-height: 9em;
+}
+
+#banner {
+  height: 160px;
+  transition: .5s;
+}
+
+#banner h1 {
+  text-align: center;
+  font-size: 36px;
+  padding: 60px 0;
+  max-width: 100%;
+  margin: 0 auto;
+  transition: .5s;
+}
+
+#header_bar ul {
+  width: 100%;
+  max-height: 100%;
+  background-color: #282c34;
+  position: absolute;
+  top: -200px;
+  transition: 1s;
+}
+
+#header_bar ul.visible {
+  width: 100%;
+  max-height: 100%;
+  background-color: #282c34;
+  top: 48px;
+  transition: 1s;
+}
+
+#header_bar ul li {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #282c34;
+  padding: 1em 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#header_bar ul li:hover {
+  background-color: #111;
+  transition: .2s;
 }
 
 @media screen and (max-width:640px) {
-  header {
-    height: 48px;
-    transition: 1s;
-  }
 
-  .handle {
-    display: block;
-  }
-
-  .active {
-    max-height: 9em;
-  }
-
-  #banner {
-    height: 160px;
-    transition: .5s;
-  }
-
-  #banner h1 {
-    text-align: center;
-    font-size: 24px;
-    padding: 60px 0;
-    max-width: 100%;
-    margin: 0 auto;
-    transition: .5s;
-}
-
-  #header_bar ul {
-    width: 100%;
-    max-height: 100%;
-    background-color: #282c34;
+  #banner img {
     position: absolute;
-    top: -200px;
-    transition: 1s;
-  }
-
-  #header_bar ul.visible {
-    width: 100%;
-    max-height: 100%;
-    background-color: #282c34;
-    top: 48px;
-    transition: 1s;
-  }
-
-  #header_bar ul li {
-    box-sizing: border-box;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  #header_bar ul li:hover {
-    background-color: #111;
-    transition: .2s;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   #sub_banner {
-    height: 640px;
+    font-size: 18px;
+    height: 570px;
     transition: .5s;
   }
 
+  #sub_banner h2 {
+    font-size: 30px;
+  }
+
 }
+
+@media screen and (max-width:440px) {
+  #banner img {
+    position: absolute;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #sub_banner {
+    font-size: 18px;
+    height: 620px;
+    transition: .5s;
+  }
